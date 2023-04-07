@@ -1,0 +1,34 @@
+class Employee:
+    increment = 1.5
+    
+    def __init__(self, fname, lname, salary):
+        self.fname = fname
+        self.lname = lname
+        self.salary = salary
+    
+    def increase_salary(self):
+        self.salary = int(self.salary * self.increment)
+    
+    @classmethod
+    def set_increment(cls, amount):
+        cls.increment = amount
+
+
+yahya = Employee('muhammad', 'yahya', 44000)
+hamza = Employee('hamza', 'bhai', 44000)
+Employee.set_increment(2)
+yahya.increase_salary()
+print(yahya.salary)
+
+print(yahya.fname, hamza.lname, yahya.salary)
+
+
+class Programmer(Employee):
+    def __init__(self, fname, lname, salary, proglang, exp):
+        super().__init__(fname, lname, salary)
+        self.proglang = proglang
+        self.exp = exp
+
+
+yahya = Programmer('muhammad', 'yahya', 44000, 'python', '2 years')
+print(yahya.exp)
