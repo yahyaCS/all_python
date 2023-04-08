@@ -1,0 +1,32 @@
+class animal:
+  def __init__(self, name, color):
+    self.name = name
+    self.color = color
+
+class cat(animal):
+  def sound1(self):
+    print('meow!')
+
+class dog(animal):
+  def sound2(self):
+    print('bark!')
+    
+
+class duck(animal):
+  def sound3(self):
+    print('quak quak!')
+
+ani1 = cat('fido', 'brown')
+ani2 = dog('oreo', 'white')
+ani3 = duck('qute', "black")
+
+print(ani1.name)
+print(ani1.color)
+print(ani2.name)
+print(ani2.color)
+print(ani3.name)
+print(ani3.color)
+
+ani1.sound1()
+ani2.sound2()
+ani3.sound3()
