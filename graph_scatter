@@ -1,0 +1,21 @@
+%matplotlib inline
+from matplotlib import pyplot as plt 
+from matplotlib import style as stl 
+
+stl.use('dark_background')
+x = [3, 6, 10]
+y = [9, 12, 17]
+x2 = [3, 6, 10]
+y2 = [10, 13, 20]
+
+plt.scatter(x, y, label = "Graph 1", color = "red", linewidth = 4)
+plt.scatter(x2, y2, label = "Graph 2", color = "yellow", linewidth = 4 )
+
+plt.plot(x, y, color = "red", linewidth = 4)
+plt.plot(x2, y2, color = "yellow", linewidth = 4 )
+
+plt.title("Graph 2")
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.legend()
+plt.show()
