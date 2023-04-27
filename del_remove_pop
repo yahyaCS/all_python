@@ -1,0 +1,21 @@
+#imp diff btw del, remove and pop
+
+list1 = [4,5,7,3,8,2,9]
+list2 = [76,345,78,23,87,76]
+list3 = [4,435,64,87,123,73]
+
+print('For del, list1') #removes the index value
+print(list1)
+del list1[0]
+print(list1)
+
+print('\nFor remove, list2') #removes the given value
+print(list2)
+list2.remove(76)
+print(list2)
+
+print('\nFor pop, list 3') #removes the index value and that value can be saved in any variable
+print(list3)
+x = list3.pop(0)
+print(list3)
+print(x)
