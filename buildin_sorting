@@ -1,0 +1,17 @@
+games = ['Cricket', 'Basket Ball', 'Tenis', 'Vollyball']
+print('games')
+games.sort()        #Sorting In Alphabetical Order
+print(games)
+
+print('\ngames reverse')
+games.sort(reverse = True)            #Sorting In Alphabetical Order(Reverse)
+
+print('\n games lenwise')
+def func(e):
+  return len(e)
+games.sort(key=func)
+print(games)
+
+print('\n games lenwise but reverse')
+games.sort(reverse = True, key = func)
+print(games)
