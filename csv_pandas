@@ -1,0 +1,17 @@
+import pandas as pd
+
+cap = pd.DataFrame([['Pakistan', 'Afganistan'], ['Islamabad', 'Kabul']], columns = ['Country', 'Capital'])
+cap.to_csv('capitals.csv')
+f = open('capitals.csv')
+f.read()
+
+df = pd.read_csv('capitals.csv')
+print(df)
+
+
+cap = cap.append(['India', 'Dehli'])
+cap.to_csv('capitals.csv')
+f = open('capitals.csv')
+f.read()
+df1 = pd.read_csv('capitals.csv')
+print(df1)
