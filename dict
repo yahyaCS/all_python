@@ -1,0 +1,21 @@
+dict1 = {
+    'name' : 'Samsung',
+     'model' : 'Galaxy Prime +',
+     'm.number' : 2010
+}
+
+print(dict1)
+dict1["m.number"] = 2011       #Changing the value of 'm.number'
+print(dict1)
+
+dict1['brand'] = dict1['name']    #Changing the key name
+del dict1['name']                                 
+print(dict1)
+
+
+
+
+list1 = ['a', 'b', 'c']
+print(dict1)
+dict2 = dict(zip(list1, list(dict1.values())))
+print(dict2)
