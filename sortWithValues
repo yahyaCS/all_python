@@ -1,0 +1,31 @@
+#SORTING with values
+
+def afunc(e):
+  return e['Age']
+
+def bfunc(b):
+  return b['Name']
+
+lista = [
+    {'Name' : 'Yahya', 'Age': 22},
+    {'Name': 'Hamza', 'Age': 15},
+    {'Name': 'Javed', 'Age': 52},
+    {'Name': 'Ali', 'Age': 25},
+    {'Name': 'Kamran', 'Age': 10},
+] 
+
+print('sorting age wise')
+lista.sort(key = afunc)
+print(lista)
+
+print('\nsorting age wise but reverse')
+lista.sort(reverse = True, key = afunc)
+print(lista)
+
+print('\nsorting name wise')
+lista.sort(key = bfunc)
+print(lista)
+
+print('\nsorting name wise but reverse')
+lista.sort(reverse = True, key = bfunc)
+print(lista)
